@@ -1,20 +1,20 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* helpdesk_mgmt_timesheet
+# 	* helpdesk_mgmt_timesheet
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-10-09 17:08+0000\n"
-"Last-Translator: Julie LeBrun <julie.lebrun@numigi.com>\n"
+"PO-Revision-Date: 2021-03-11 12:45+0000\n"
+"Last-Translator: Yann Papouin <y.papouin@dec-industrie.com>\n"
 "Language-Team: none\n"
-"Language: fr_FR\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__allow_timesheet
@@ -46,12 +46,17 @@ msgstr "Durée (Heure(s))"
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model,name:helpdesk_mgmt_timesheet.model_helpdesk_ticket
 msgid "Helpdesk Ticket"
-msgstr "Ticket d'Assistance"
+msgstr "Ticket d'assistance"
 
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model,name:helpdesk_mgmt_timesheet.model_helpdesk_ticket_team
 msgid "Helpdesk Ticket Team"
-msgstr "Équipe du ticket d'Assistance"
+msgstr "Équipe des tickets du service d'assistance"
+
+#. module: helpdesk_mgmt_timesheet
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__last_timesheet_activity
+msgid "Last Timesheet Activity"
+msgstr "Dernière activité sur feuille de temps"
 
 #. module: helpdesk_mgmt_timesheet
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_view_search
@@ -66,7 +71,7 @@ msgstr "Heures planifiées"
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__progress
 msgid "Progress"
-msgstr "Progression"
+msgstr "En cours"
 
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_helpdesk_ticket__remaining_hours
@@ -80,6 +85,7 @@ msgstr "Tâches"
 
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line__ticket_id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_hr_timesheet_switch__ticket_id
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.hr_timesheet_line_search
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.report_timesheet
 msgid "Ticket"
@@ -87,6 +93,7 @@ msgstr "Ticket"
 
 #. module: helpdesk_mgmt_timesheet
 #: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_account_analytic_line__ticket_partner_id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_timesheet.field_hr_timesheet_switch__ticket_partner_id
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.hr_timesheet_line_search
 msgid "Ticket partner"
 msgstr "Partenaire du ticket"
@@ -120,6 +127,11 @@ msgid "Total Hours"
 msgstr "Heures totales"
 
 #. module: helpdesk_mgmt_timesheet
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.helpdesk_ticket_view_search
+msgid "With activity today"
+msgstr "Avec activité aujourd’hui"
+
+#. module: helpdesk_mgmt_timesheet
 #: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_timesheet.hr_timesheet_line_search
 msgid "With ticket"
-msgstr "avec ticket"
+msgstr "Avec ticket"
